@@ -172,6 +172,70 @@
         letter-spacing: -2px;
       }
     }
+
+    .benefits-content {
+      width: min(1100px, 88%);
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .benefits-title {
+      font-size: clamp(36px, 5vw, 56px);
+      letter-spacing: -2px;
+      margin-bottom: 60px;
+      color: #12325b;
+    }
+
+    .benefits-title strong {
+      color: #1264c7;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .benefit-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 42px 28px;
+      box-shadow: 0 20px 45px rgba(18, 100, 199, 0.12);
+    }
+
+    .benefit-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 24px;
+      border-radius: 18px;
+      background: #1264c7;
+      color: #ffffff;
+      font-size: 28px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .benefit-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: #12325b;
+      margin-bottom: 12px;
+    }
+
+    .benefit-text {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #58708d;
+    }
+
+    @media (max-width: 800px) {
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 
@@ -208,6 +272,40 @@
         </div>
       </section>
 
+    </div>
+  </main>
+
+  <main class="slide">
+    <div class="benefits-content">
+      <h2 class="benefits-title">
+        3 motivos pra <strong>indicar agora</strong>
+      </h2>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">$</div>
+          <div class="benefit-title">R$ 50 pro indicado</div>
+          <p class="benefit-text">
+            Seu amigo ganha R$ 50 assim que entra para a comunidade ArenaCash.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">$</div>
+          <div class="benefit-title">R$ 50 pra quem indicou</div>
+          <p class="benefit-text">
+            Você também ganha R$ 50 por cada indicação que der certo.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">∞</div>
+          <div class="benefit-title">Sem limite de indicações</div>
+          <p class="benefit-text">
+            Indique quantos amigos quiser e acumule ganhos sem limite.
+          </p>
+        </div>
+      </div>
     </div>
   </main>
 
