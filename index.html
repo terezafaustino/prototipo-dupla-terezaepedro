@@ -339,6 +339,50 @@
         grid-template-columns: 1fr;
       }
     }
+
+    .faq-content {
+      width: min(900px, 88%);
+      position: relative;
+      z-index: 1;
+    }
+
+    .faq-title {
+      font-size: clamp(36px, 5vw, 56px);
+      letter-spacing: -2px;
+      margin-bottom: 50px;
+      color: #12325b;
+      text-align: center;
+    }
+
+    .faq-title strong {
+      color: #1264c7;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px 34px;
+      box-shadow: 0 15px 40px rgba(18, 100, 199, 0.1);
+    }
+
+    .faq-question {
+      font-size: 19px;
+      font-weight: 800;
+      color: #12325b;
+      margin-bottom: 10px;
+    }
+
+    .faq-answer {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #58708d;
+    }
   </style>
 </head>
 
@@ -423,6 +467,37 @@
           <div class="benefit-title">Sem limite de indicações</div>
           <p class="benefit-text">
             Indique quantos amigos quiser e acumule ganhos sem limite.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <main class="slide">
+    <div class="faq-content">
+      <h2 class="faq-title">
+        Perguntas <strong>frequentes</strong>
+      </h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">Como eu recebo o R$ 50 da indicação?</div>
+          <p class="faq-answer">
+            O valor cai direto na sua conta ArenaCash assim que o amigo indicado entrar para a comunidade.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Existe um número máximo de amigos que posso indicar?</div>
+          <p class="faq-answer">
+            Não. Você pode indicar quantos amigos quiser e ganhar R$ 50 por cada indicação válida.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">O amigo indicado também precisa fazer alguma coisa?</div>
+          <p class="faq-answer">
+            Sim, ele precisa entrar para a comunidade ArenaCash usando o seu link de indicação.
           </p>
         </div>
       </div>
