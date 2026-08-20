@@ -112,6 +112,48 @@
       align-items: center;
     }
 
+    .calculator {
+      margin-top: 30px;
+      padding: 24px 28px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 15px 35px rgba(18, 100, 199, 0.12);
+      max-width: 420px;
+    }
+
+    .calculator label {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+      color: #12325b;
+      margin-bottom: 10px;
+    }
+
+    .calculator input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 2px solid #d9e8fb;
+      border-radius: 10px;
+      font-size: 17px;
+      color: #12325b;
+      margin-bottom: 14px;
+    }
+
+    .calculator input:focus {
+      outline: none;
+      border-color: #1264c7;
+    }
+
+    .calculator .calc-resultado {
+      font-size: 17px;
+      color: #58708d;
+    }
+
+    .calculator .calc-resultado strong {
+      color: #1264c7;
+      font-size: 20px;
+    }
+
     .cash-card {
       width: 330px;
       height: 330px;
@@ -323,6 +365,23 @@
         <a href="#" class="button">
           Quero meus R$ 50
         </a>
+
+        <div class="calculator">
+          <label for="calc-indicacoes">Quantos amigos você vai indicar?</label>
+          <input
+            type="text"
+            inputmode="numeric"
+            id="calc-indicacoes"
+            placeholder="Ex: 3"
+            oninput="
+              var n = parseInt(this.value.replace(/[^0-9]/g, ''), 10) || 0;
+              document.getElementById('calc-valor').textContent = 'R$ ' + (n * 50);
+            "
+          >
+          <p class="calc-resultado">
+            Você pode ganhar <strong id="calc-valor">R$ 0</strong>
+          </p>
+        </div>
       </section>
 
       <section class="visual">
